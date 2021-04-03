@@ -7,7 +7,7 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            // This is calling Calculate which will return 'result' in the Console.WriteLine. If we only wrote 'Calculate();' it would still go to the Calculate method, do the math, but not show anything on the scren.
+            // This is calling Calculate which will return 'result' in the Console.WriteLine. If we only wrote 'Calculate();' it would still go to the Calculate method, do the math, but not show anything on the screen.
             Console.WriteLine(Calculate());
             Console.Read();
         }
