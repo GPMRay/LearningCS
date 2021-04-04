@@ -12,7 +12,7 @@ namespace HelloWorld
             Console.WriteLine("Please enter your username"); // Inputs for a username
             userName = Console.ReadLine(); // Saves the input to userName
 
-            if (isRegistered && userName != "" && userName.Equals("admin")) // Checks to ensure all the variable specifed are true (except for userName). Code will not run below if no username is specified.
+            if (isRegistered && userName != "" && userName.Equals("admin")) // Checks to ensure all the specifed variables are true. Code will not run if the userName is not specified to 'admin'.
             {
                 Console.WriteLine("Hi there, registered user");
 
