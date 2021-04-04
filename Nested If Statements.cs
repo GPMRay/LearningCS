@@ -1,11 +1,9 @@
 using System;
 
-
 namespace HelloWorld
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             bool isAdmin = false;
@@ -26,7 +24,7 @@ namespace HelloWorld
                     }
                 }
             }
-            Console.Read();
+            Console.Read(); // Pauses the program
         }
     }
 }
