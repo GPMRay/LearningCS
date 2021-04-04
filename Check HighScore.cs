@@ -22,8 +22,8 @@ namespace HelloWorld
         {
             if(score > highscore) // If the int is higher than the current highscore, continue below.
             {
-                highscore = score; // Changes the old highscore to the score by the player.
-                highscorePlayer = playerName; // Changes the old highScorePlayer to the current playerName.
+                highscore = score; // Updates the old highscore to the score by the player.
+                highscorePlayer = playerName; // Updates the old highScorePlayer to the current playerName.
 
                 Console.WriteLine("New highscore is " + score); // Outputs the new score followed by the playerName
                 Console.WriteLine("It is now held by " + playerName);
