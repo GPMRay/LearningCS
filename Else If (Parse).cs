@@ -15,11 +15,11 @@ namespace HelloWorld
 
             if(int.TryParse(tempreture, out number)) // Using 'TryParse' to avoid a crash in the event the user enters a invalid value. It's converting a string to an int.
             {
-                numTemp = number;
+                numTemp = number; // If the user input was able to be converted, this will make it equal to each other.
             }
             else
             {
-                numTemp = 0;
+                numTemp = 0; // If the user input was not able to be converted, then numTemp is set to 0
                 Console.WriteLine("Value enetered was null. 0 set as tempreture.");
             }
 
