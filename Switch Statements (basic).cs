@@ -21,6 +21,21 @@ namespace HelloWorld
                     Console.WriteLine("How old are you then?");
                     break;
             }
+            
+            // This does the same exact thing as shown above, however checks a string. This would work for any other data type.
+            string username = "Denis";
+            switch(username)
+            {
+                case "Denis":
+                    Console.WriteLine("Username is denis");
+                    break;
+                case "root":
+                    Console.WriteLine("Username is denis");
+                    break;
+                default:
+                    Console.WriteLine("Username is unknown");
+                    break;
+            }
 
             Console.Read();
         }
