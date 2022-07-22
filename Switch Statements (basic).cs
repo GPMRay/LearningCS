@@ -1,43 +1,57 @@
 using System;
 
-namespace HelloWorld
+namespace ConsoleApp2
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-
-            int age = 26;
-
-            switch (age) // Grabs the current value of variable 'age'
+            int age = 25;
+            // Switch/case example
+            switch (age)
             {
-                case 15: // Checks to see if age is equal to 15. If not moves on.
-                    Console.WriteLine("Too young to party in the club");
-                    break; // Required to end the case.
+                case 15:
+                    Console.WriteLine("Too young to party in the club!");
+                    break;
                 case 25:
                     Console.WriteLine("Good to go!");
                     break;
-                default: // If none of these cases match the variable in the switch, then 'default' will be ran.
+
+                default:
                     Console.WriteLine("How old are you then?");
                     break;
+
             }
-            
-            // This does the same exact thing as shown above, however checks a string. This would work for any other data type.
+            // If example
+
+            if (age == 15)
+            {
+                Console.WriteLine("Too young to party in the club!");
+            }
+            else if(age == 25)
+            {
+                Console.WriteLine("Good to go!");
+            }
+            else
+            {
+                Console.WriteLine("How old are you then?");
+            }
+
+            // String example
             string username = "Denis";
-            switch(username)
+
+            switch (username)
             {
                 case "Denis":
-                    Console.WriteLine("Username is denis");
+                    Console.WriteLine("Username is Denis");
                     break;
-                case "root":
-                    Console.WriteLine("Username is denis");
+                case "Root":
+                    Console.WriteLine("Username is Root");
                     break;
                 default:
                     Console.WriteLine("Username is unknown");
                     break;
             }
-
-            Console.Read();
         }
     }
 }
