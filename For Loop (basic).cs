@@ -1,19 +1,17 @@
 using System;
 
-namespace HelloWorld
+namespace ConsoleApp2
 {
-    class Program
+    internal class Program
     {
-
+        static int counter; // Created a global variable so that line 14 can show the final value of 'counter'.
         static void Main(string[] args)
         {
-            for(int counter = 0; counter < 50; counter +=5) // first value is the int value, second is the conditon (what it's checking), then after it's checked it increases the variable as defined.
+            for(counter = 0; counter < 10; counter++) // We set a value to zero, then we check if the condition is true, if it's true, it runs the code block (cw). After the code block is executed, the third statemnt (counter++) will execute.
             {
-                Console.WriteLine(counter + " is lower than 50"); // Displays the current value while the loop is ran
+                Console.WriteLine(counter); // Executed before (counter++). After this code bloock is executed, the third statement is executed.
             }
-            Console.WriteLine("For loop is done"); // Prints that the loop is done for a better visualizer of what's happening
-            Console.Read();
+            Console.WriteLine(counter);
         }
-
     }
 }
